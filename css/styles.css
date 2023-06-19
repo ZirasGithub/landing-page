@@ -25,10 +25,19 @@ body {
   display: flex;
   align-items: center;
 }
-.nav {
+nav {
   display: flex;
   align-items: center;
-  justify-content: center;
-  background-color: rgba(0, 0, 0, 0.3);
-  padding: 0px;
+  justify-content: space-around;
+  background-color: rgba(0, 0, 0, 0.123);
+  padding: 1rem;
+}
+ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+ul a {
+  color: rgb(180, 186, 190);
+  text-decoration: none;
 }
