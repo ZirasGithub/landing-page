@@ -42,7 +42,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 50px;
+  padding: 20px;
   position: fixed;
   width: 100%;
 }
@@ -80,6 +80,16 @@ body {
   font-weight: 600;
   color: var(--text-white);
 }
+.lista-nav .active-btn {
+  color: var(--text-white);
+  cursor: pointer;
+}
+.active-btn {
+  max-width: fit-content;
+  background-color: var(--background);
+  border-radius: 20px;
+  padding: 5px;
+}
 
 /* BODY */
 .bg-container {
@@ -89,25 +99,22 @@ body {
 
 /* HERO */
 main {
-  background: var(--background);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  color: var(--text-white);
   background-image: url(../img/129847-el_caf_negro-1920x1080.jpg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  color: var(--text-white);
 }
+
 #hero {
-  max-width: 1500px;
-  /* CON MARGIN TOP SE DESPEGA EL TITULO DEL NAVBAR */
+  max-width: 1200px;
   margin-top: 50px;
-  padding: 100px 0;
-  max-width: fit-content;
+  padding: 70px 0;
   display: flex;
   justify-content: center;
   align-items: center;
-
-  gap: 35rem;
 }
 .hero-info {
   display: flex;
@@ -124,4 +131,14 @@ main {
   font-size: 14px;
   width: 70%;
   color: var(--text-gray);
+}
+.hero-info2 {
+  display: flex;
+  gap: 20px;
+  width: 70%;
+  padding: 20px;
+}
+.coffee-pic {
+  display: flex;
+  border-radius: 15px;
 }
