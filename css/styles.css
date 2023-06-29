@@ -1,43 +1,127 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+:root {
+  /* bg colors */
+
+  --background: #3b1d04;
+  --primary: #1e50ff;
+  --secondary: #5c3202;
+  --btn-lg: #050d26;
+  --bg-azul-10: #e9eeff;
+  --bg-white: #fff;
+  --bg-electric: #f0fbff;
+  --nav-bg: #0f1525;
+  --text-gray: #adb9c7;
+
+  /* text colors */
+
+  --text-gray: #adb9c7;
+  --text-white: #f3f4f6;
+
+  /* decoration */
+
+  --fire: #ff6d00;
+  --electric: #64d3ff;
+}
+
+/* ============================== */
+
+/* RESET */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+/* HEADER */
+
+header {
+  background-color: var(--secondary);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+  position: fixed;
+  width: 100%;
 }
 body {
-  background: #131418;
-  color: white;
   font-family: "Poppins", sans-serif;
-  padding: 3rem;
 }
-.container {
-  border-radius: 16px;
-  margin: 0 auto;
-  display: block;
-}
-.header-container {
-  height: 100%;
-  position: relative;
-  text-align: center;
-}
-.div {
+
+/* ============ Clases ============ */
+
+.nav,
+.lista-nav {
+  display: flex;
   justify-content: center;
-  display: flex;
   align-items: center;
 }
-nav {
+.nav {
+  gap: 10rem;
+}
+
+.lista-nav {
+  gap: 3rem;
+}
+.lista-nav a {
+  color: var(--text-gray);
+}
+
+/* ESTO SE VA A VER MÁS ADELANTE. */
+/* Se llama al primer hijo dentro del LI para darle más peso a la fuente. Y para agregarle le color blanco, se especifica aún más a que le quieremos agregar el color blanco.
+.lista-nav li:first-child > a {
+  font-weight: 600;
+  color: var(--text-white);
+} */
+/* CON LAS HERRAMIENTAS QUE TENEMOS AHORA, CONVIENE DARLE UNA CLASE A "HOME" Y A ESA CLASE DARLE EL TEXT WHITE */
+.lista-nav .active {
+  font-weight: 600;
+  color: var(--text-white);
+}
+
+/* BODY */
+.bg-container {
+  display: flex;
+}
+/* CLASE MINUTO 45:12 */
+
+/* HERO */
+main {
+  background: var(--background);
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  background-color: rgba(0, 0, 0, 0.123);
-  padding: 1rem;
+  justify-content: center;
+  flex-direction: column;
+  color: var(--text-white);
+  background-image: url(../img/129847-el_caf_negro-1920x1080.jpg);
 }
-ul {
-  list-style: none;
+#hero {
+  max-width: 1500px;
+  /* CON MARGIN TOP SE DESPEGA EL TITULO DEL NAVBAR */
+  margin-top: 50px;
+  padding: 100px 0;
+  max-width: fit-content;
   display: flex;
-  gap: 15px;
+  justify-content: center;
+  align-items: center;
+
+  gap: 35rem;
 }
-ul a {
-  color: rgb(180, 186, 190);
-  text-decoration: none;
+.hero-info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 70%;
+}
+.hero-info h1 {
+  font-size: 48px;
+  font-weight: 800;
+  min-width: 500px;
+}
+.hero-info p {
+  font-size: 14px;
+  width: 70%;
+  color: var(--text-gray);
 }

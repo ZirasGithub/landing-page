@@ -3,31 +3,41 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Landing page</title>
+    <title>Fiore Coffee Shop</title>
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <nav>
-      <img src="./img/4baa0b8b1aed46e98c62ca10f4a10167.png" alt="" />
-      <ul class="nav">
-        <li class="nav_link"><a href="#">Home</a></li>
-        <li class="nav_link"><a href="#">Sobre mi</a></li>
-        <li class="nav_link"><a href="#">Trabajos recientes</a></li>
-        <li class="nav_link"><a href="#">Experiencias</a></li>
-        <li class="nav_link"><a href="#">Contacto</a></li>
-      </ul>
-    </nav>
-    <div class="container header-container">
-      <div class="div">
-        <h4>¡Hola! soy</h4>
-      </div>
+    <section>
+      <header>
+        <img src="https://via.placeholder.com/50" alt="Logo" class="Logo" />
 
-      <div class="div">
-        <h1>Gonzalo Miranda</h1>
+        <!-- Navbar -->
+
+        <nav class="nav">
+          <ul class="lista-nav">
+            <li><a href="#hero" class="active">Menú</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Clientes</a></li>
+            <li><a href="#">Contacto</a></li>
+          </ul>
+          <img src="https://via.placeholder.com/50" alt="Logo de busqueda" />
+        </nav>
+        <!-- Todo lo que no se usa para navegar (es decir, los botones) van por fuera del ul -->
+      </header>
+    </section>     
+      <main>
+        <!-- Hero -->
+        <section id="hero"> 
+        <div class="hero-info">
+          <h1>Llegaste. Es tu momento de relax.</h1>
+            <p>Somos tu lugar, el lugar donde venís a relajarte. <br> 
+              Disfrutá de los mejores granos de un exquisito café de especialidad, preparado con el amor y la profesionalidad a la que tenés que estar acostumbrado/a. <br>
+              Llegaste a <span>Fiore Coffee Shop.</span>
+            </p>
       </div>
-      <div>
-        <p>Bienvenido/a a mi portfolio</p>
-      </div>
-    </div>
+        <div class="hero-class"></div>
+
+      </main>
+    </section>
   </body>
 </html>
