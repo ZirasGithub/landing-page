@@ -74,8 +74,14 @@ body {
   cursor: pointer;
   }
   .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100px;
     height: 100px;
+    background-color: var(--background);
+    border-radius: 30px;
+
   }
 
 /* ESTO SE VA A VER MÁS ADELANTE. */
@@ -154,3 +160,33 @@ main {
   border-radius: 15px;
   visibility: hidden;
 }
+/* Buttons */
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding-top: 10px;
+  padding-right: 15rem;
+
+  }
+  .buttons p {
+    font-size: 16px;
+    color: var(--text-white);
+  }
+  .buttons > :first-child {
+    background-color: var(--secondary);
+    max-width: fit-content;
+    padding: 7px;
+    border-radius: 25px;
+    cursor: pointer;
+ }
+ .buttons > :last-child {
+  border: solid;
+  border-color: var(--secondary);
+  color:black;
+  max-width: fit-content;
+  padding: 6px;
+  border-radius: 25px;
+  cursor: pointer;
+ }
