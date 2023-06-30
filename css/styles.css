@@ -45,6 +45,7 @@ header {
   padding: 20px;
   position: fixed;
   width: 100%;
+
 }
 body {
   font-family: "Poppins", sans-serif;
@@ -68,6 +69,14 @@ body {
 .lista-nav a {
   color: var(--text-gray);
 }
+.search-icon {
+  width: 25px;
+  cursor: pointer;
+  }
+  .logo {
+    width: 100px;
+    height: 100px;
+  }
 
 /* ESTO SE VA A VER MÁS ADELANTE. */
 /* Se llama al primer hijo dentro del LI para darle más peso a la fuente. Y para agregarle le color blanco, se especifica aún más a que le quieremos agregar el color blanco.
@@ -99,7 +108,9 @@ body {
 
 /* HERO */
 main {
-  background-image: url(../img/129847-el_caf_negro-1920x1080.jpg);
+  background-image: url(../img/background-img.jpg);
+  background-size:cover;
+  background-position: 0 90px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -141,4 +152,5 @@ main {
 .coffee-pic {
   display: flex;
   border-radius: 15px;
+  visibility: hidden;
 }
