@@ -83,13 +83,6 @@ body {
   border-radius: 30px;
 }
 
-/* ESTO SE VA A VER MÁS ADELANTE. */
-/* Se llama al primer hijo dentro del LI para darle más peso a la fuente. Y para agregarle le color blanco, se especifica aún más a que le quieremos agregar el color blanco.
-.lista-nav li:first-child > a {
-  font-weight: 600;
-  color: var(--text-white);
-} */
-/* CON LAS HERRAMIENTAS QUE TENEMOS AHORA, CONVIENE DARLE UNA CLASE A "HOME" Y A ESA CLASE DARLE EL TEXT WHITE */
 .lista-nav .active {
   font-weight: 600;
   color: var(--text-white);
@@ -109,20 +102,17 @@ body {
 .bg-container {
   display: flex;
 }
-/* CLASE MINUTO 45:12 */
 
 #hero {
   background-image: url(../img/background-img.jpg);
   display: flex;
-  justify-content: flex-start;
+  flex-direction: column;
+  justify-content: center;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   background-size: cover;
-  margin-top: 50px;
-  padding: 70px 30px;
-
-  border-color: red;
-  border-style: solid;
+  margin-top: 140px;
+  padding: 70px 70px;
 }
 .hero-info {
   color: var(--text-white);
@@ -130,10 +120,9 @@ body {
   flex-direction: column;
   gap: 20px;
   width: 750px;
+  height: 500px;
   text-align: center;
   padding: 100px 0;
-  border-color: blue;
-  border-style: solid;
 }
 .hero-info h1 {
   font-size: 60px;
@@ -147,12 +136,6 @@ body {
   line-height: 30px;
   color: var(--text-gray);
 }
-.hero-info2 {
-  display: flex;
-  gap: 20px;
-  width: 70%;
-  padding: 20px;
-}
 /* Buttons */
 .buttons {
   display: flex;
@@ -206,4 +189,23 @@ body {
   padding: 6px;
   border-radius: 25px;
   cursor: pointer;
+}
+.middle-text {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
+}
+.info-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--text-white);
+  margin: 80px;
+  width: 1300px;
+  height: 150px;
+  padding: 0 150px;
 }
