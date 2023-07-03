@@ -45,6 +45,7 @@ header {
   padding: 20px;
   position: fixed;
   width: 100%;
+  top: 0;
 }
 body {
   font-family: "Poppins", sans-serif;
@@ -98,38 +99,52 @@ body {
 /* CLASE MINUTO 45:12 */
 
 /* HERO */
-main {
-  background-image: url(../img/129847-el_caf_negro-1920x1080.jpg);
+/* main {
+  
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   width: 100%;
-  color: var(--text-white);
-}
+  
+  border: solid;
+  border-color: green;
+} */
 
 #hero {
-  max-width: 1200px;
-  margin-top: 50px;
-  padding: 70px 0;
+  background-image: url(../img/129847-el_caf_negro-1920x1080.jpg);
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  margin-top: 50px;
+  padding: 70px 30px;
+
+  border-color: red;
+  border-style: solid;
 }
 .hero-info {
+  color: var(--text-white);
   display: flex;
   flex-direction: column;
   gap: 20px;
-  width: 70%;
+  width: 750px;
+  text-align: center;
+  padding: 100px 0;
+  border-color: blue;
+  border-style: solid;
 }
 .hero-info h1 {
-  font-size: 48px;
+  font-size: 60px;
   font-weight: 800;
   min-width: 500px;
 }
 .hero-info p {
   font-size: 14px;
-  width: 70%;
+  text-align: left;
+  letter-spacing: 2px;
+  line-height: 30px;
   color: var(--text-gray);
 }
 .hero-info2 {
@@ -138,7 +153,30 @@ main {
   width: 70%;
   padding: 20px;
 }
-.coffee-pic {
+/* Buttons */
+.buttons {
   display: flex;
-  border-radius: 15px;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+.buttons p {
+  font-size: 16px;
+  color: var(--text-white);
+}
+.buttons > :first-child {
+  background-color: var(--secondary);
+  max-width: fit-content;
+  padding: 7px;
+  border-radius: 25px;
+  cursor: pointer;
+}
+.buttons > :last-child {
+  border: solid;
+  border-color: var(--secondary);
+  color: black;
+  max-width: fit-content;
+  padding: 6px;
+  border-radius: 25px;
+  cursor: pointer;
 }
