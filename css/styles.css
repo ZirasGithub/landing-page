@@ -37,7 +37,7 @@
 
 /* HEADER */
 
-header {
+header .head {
   background-color: var(--secondary);
   display: flex;
   justify-content: space-between;
