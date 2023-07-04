@@ -152,6 +152,10 @@ main {
   border-radius: 25px;
   cursor: pointer;
 }
+.buttons > :first-child a {
+  text-decoration: none;
+  color: var(--text-white);
+}
 .buttons > :last-child {
   border: solid;
   border-color: var(--secondary);
@@ -164,7 +168,7 @@ main {
 }
 .buttons > :last-child a {
   text-decoration: none;
-  color: var(--text-white);
+  color: var(--secondary);
 }
 .middle-text {
   display: flex;
