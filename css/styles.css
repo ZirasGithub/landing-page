@@ -92,9 +92,9 @@ body {
 .bg-container {
   display: flex;
 }
-/* main {
+main {
   background-color: var(--background);
-} */
+}
 #hero {
   background-image: url(../img/background-img.jpg);
   background-size: cover;
@@ -166,7 +166,9 @@ body {
   justify-items: center;
   align-items: center;
   justify-content: center;
+  padding: 30px 0;
 }
+
 #info-maps {
   background-color: #c8b3ad;
 }
