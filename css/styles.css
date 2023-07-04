@@ -140,7 +140,7 @@ main {
   align-items: flex-start;
   justify-content: left;
   gap: 2rem;
-}
+  }
 .buttons p {
   font-size: 16px;
   color: var(--text-white);
@@ -160,6 +160,11 @@ main {
   padding: 6px;
   border-radius: 25px;
   cursor: pointer;
+  text-decoration: none;
+}
+.buttons > :last-child a {
+  text-decoration: none;
+  color: var(--text-white);
 }
 .middle-text {
   display: flex;
