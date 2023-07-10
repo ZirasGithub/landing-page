@@ -2,8 +2,8 @@
 :root {
   /* bg colors */
 
-  --background: #34201f;
-  --secondary: #1d0f0c;
+  --background: rgba(5,3,4,255);
+  --secondary: rgba(14,2,4,255);
   --nav-bg: #50423d;
   --bg-white: #fff;
 
@@ -11,7 +11,12 @@
 
   --text-gray: #adb9c7;
   --text-white: #f3f4f6;
+
+  /* button colors */
+
+  --btn-clr: #914313;
 }
+  
 
 /* ============================== */
 
@@ -93,25 +98,22 @@ body {
   display: flex;
 }
 main {
-  background: rgb(124, 51, 7);
-  background: linear-gradient(
-    90deg,
-    rgba(124, 51, 7, 1) 0%,
-    rgba(150, 118, 80, 1) 51%,
-    rgba(200, 179, 173, 1) 100%
-  );
+  background: var(--background);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 #hero {
-  background-image: url(../img/background-img.jpg);
-  background-size: cover;
+  /* background-image: url(../img/background-img.jpg);
+  background-size: cover; */
   width: 100%;
   height: 100%;
   margin-top: 140px;
   padding: 85px 70px;
+}
+.hero-items {
+  display: flex;
 }
 .hero-info {
   color: var(--text-white);
@@ -123,6 +125,14 @@ main {
   text-align: center;
   padding: 100px 0;
 }
+
+#image {
+  width: 500px;
+  height: 500px;
+  border-radius: 500px;
+}
+
+
 .hero-info h1 {
   font-size: 60px;
   font-weight: 800;
@@ -153,7 +163,7 @@ main {
   color: var(--text-white);
 }
 .buttons > :first-child {
-  background-color: var(--secondary);
+  background-color: var(--btn-clr);
   max-width: fit-content;
   padding: 7px;
   border-radius: 25px;
@@ -165,7 +175,7 @@ main {
 }
 .buttons > :last-child {
   border: solid;
-  border-color: var(--secondary);
+  border-color: var(--btn-clr);
   color: black;
   max-width: fit-content;
   padding: 6px;
@@ -175,7 +185,7 @@ main {
 }
 .buttons > :last-child a {
   text-decoration: none;
-  color: var(--secondary);
+  color: var(--text-gray);
 }
 .middle-text {
   display: flex;
@@ -187,40 +197,36 @@ main {
 
 #info-maps {
   max-width: 1200px;
-  border: red 1px solid;
-  padding: 30px 0;
+  background-color: var(--secondary);
+  color: var(--text-white);
 }
 .info-text {
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  font-size: 18px;
-  font-weight: 600;
-  margin: 10px;
+  /* font-size: 18px; */
+  /* font-weight: 600; */
   width: 100%;
   height: 150px;
   padding: 0 130px;
-  color: var(--secondary);
 }
 #cards {
-  border: green 3px solid;
   max-width: 1200px;
-  padding: 30px 0;
+  background-color: var(--secondary);
+  color: var(--text-white);
 }
 .subtitle-cards {
-  border: white 1px solid;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 }
 .advantages-cards {
-  border: blue 2px solid;
   display: flex;
+  padding: 30px 0;
 }
 .style-cards {
-  border: black 2px solid;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -236,6 +242,8 @@ main {
   padding: 30px 0;
   display: flex;
   justify-content: space-around;
+  background-color: var(--secondary);
+  color: var(--text-white);
 }
 .contact-us {
   border: blue 2px solid;
@@ -257,6 +265,7 @@ main {
   border: brown 2px solid;
   max-width: 1200px;
   width: 100%;
+  background-color: var(--secondary);
 }
 .footer-info {
   border: yellow 2px solid;
