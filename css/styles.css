@@ -2,8 +2,8 @@
 :root {
   /* bg colors */
 
-  --background: rgba(5,3,4,255);
-  --secondary: rgba(14,2,4,255);
+  --background: rgba(5, 3, 4, 255);
+  --secondary: rgba(14, 2, 4, 255);
   --nav-bg: #50423d;
   --bg-white: #fff;
 
@@ -16,7 +16,6 @@
 
   --btn-clr: #914313;
 }
-  
 
 /* ============================== */
 
@@ -109,6 +108,7 @@ main {
   background-size: cover; */
   width: 100%;
   height: 100%;
+  max-width: 1200px;
   margin-top: 140px;
   padding: 85px 70px;
 }
@@ -125,13 +125,14 @@ main {
   text-align: center;
   padding: 100px 0;
 }
-
-#image {
+.image {
+  background-image: url(../img/_04797cda-63e6-42eb-9b16-def037c804b4.jfif);
+  background-size: cover;
+  box-shadow: inset 0 0 15px 20px var(--background);
+  border-radius: 600px;
   width: 500px;
   height: 500px;
-  border-radius: 500px;
 }
-
 
 .hero-info h1 {
   font-size: 60px;
