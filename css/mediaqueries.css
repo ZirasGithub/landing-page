@@ -1,0 +1,57 @@
+/* ======== MEDIA QUERIES ========*/
+/* tablet */
+
+@media (max-width: 992px) {
+  /* navbar */
+  .nav {
+    gap: 10px;
+  }
+  .lista-nav {
+    position: absolute;
+    top: 65px;
+    width: 90%;
+    left: 5%;
+    right: 5%;
+    border: 2px solid var(--background);
+    border-top: 0;
+    flex-direction: column;
+    background-color: var(--nav-bg);
+    border-radius: 8px 0px 15px 15px;
+    -webkit-border-radius: 8px 0px 15px 15px;
+    padding: 45px 30px;
+    display: none;
+  }
+  .lista-nav a {
+    font-size: 18px;
+  }
+  .menu-label {
+    display: flex;
+    cursor: pointer;
+    order: 2;
+  }
+  #menu-toggle:checked + .lista-nav {
+    display: flex;
+  }
+
+  /* HERO */
+
+  .hero-info {
+    /* width: 100%; */
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+  }
+  .hero-info h1 {
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+  }
+  .hero-info p {
+    text-align: center;
+  }
+  .image {
+    display: none;
+  }
+  /* info */
+}

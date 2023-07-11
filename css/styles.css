@@ -31,8 +31,8 @@
 
 /* HEADER */
 
-header .head {
-  background-color: var(--nav-bg);
+header {
+  background: linear-gradient(to bottom, var(--nav-bg), var(--background));
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -44,7 +44,13 @@ header .head {
 body {
   font-family: "Poppins", sans-serif;
 }
+/* ======= MENU =======*/
 
+#cart-toggle,
+#menu-toggle,
+.menu-label {
+  display: none;
+}
 /* ============ Clases ============ */
 
 .nav,
@@ -71,8 +77,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100px;
-  height: 100px;
+  width: 50px;
+  height: 50px;
   background-color: var(--background);
   border-radius: 30px;
 }
@@ -107,7 +113,7 @@ main {
   width: 100%;
   height: 100%;
   max-width: 1300px;
-  margin-top: 140px;
+  /* margin-top: 0px;  (REVISAR) */
   padding: 85px 70px;
   display: flex;
   align-items: center;
@@ -140,6 +146,17 @@ main {
   font-weight: 800;
   min-width: 500px;
   text-align: left;
+}
+.hero-info span {
+  background: linear-gradient(
+    to top,
+    var(--secondary),
+    var(--btn-clr),
+    var(--text-white)
+  );
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
 }
 .hero-info p {
   font-size: 14px;
