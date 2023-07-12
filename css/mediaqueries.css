@@ -134,6 +134,7 @@
   }
   .subtitle-cards h2 {
     font-size: 20px;
+    text-align: center;
   }
   .subtitle-cards p {
     display: flex;
@@ -142,6 +143,7 @@
   .advantages-cards {
     flex-direction: column;
     gap: 30px;
+    border: 1px red solid;
   }
   .style-cards {
     height: 300px;
