@@ -24,6 +24,9 @@
   .lista-nav a {
     font-size: 18px;
   }
+  .active-btn {
+    background-color: var(--btn-clr);
+  }
   .menu-label {
     display: flex;
     cursor: pointer;
@@ -95,6 +98,14 @@
     flex-direction: column;
     gap: 30px;
   }
+  .subtitle-cards h2 {
+    display: flex;
+    text-align: center;
+  }
+  .subtitle-cards p {
+    display: flex;
+    text-align: center;
+  }
   .style-cards {
     height: 300px;
     width: 300px;
@@ -143,7 +154,6 @@
   .advantages-cards {
     flex-direction: column;
     gap: 30px;
-    border: 1px red solid;
   }
   .style-cards {
     height: 300px;
