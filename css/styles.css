@@ -149,7 +149,7 @@ main {
 .hero-info h1 {
   font-size: 60px;
   font-weight: 800;
-  min-width: 500px;
+  min-width: 350px;
   text-align: left;
 }
 .hero-info span {
@@ -317,7 +317,8 @@ main {
 }
 .contact-info {
   display: flex;
-  gap: 15px;
+  justify-content: space-around;
+  /* gap: 15px; */
 }
 .contact-card {
   padding: 20px 0;
@@ -338,13 +339,9 @@ main {
 }
 .list-info {
   margin: 0 5px;
-
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-
-  /* display: flex;
-  justify-content: space-between; */
 }
 
 .icon-background {
